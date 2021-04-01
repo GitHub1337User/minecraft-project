@@ -8,7 +8,5 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Minecraft</title>
 </head>
-<body>
-
-</body>
+<body>gfsfgsdfgsdfgsdfg</body>
 </html>
