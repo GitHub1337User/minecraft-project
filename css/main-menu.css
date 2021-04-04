@@ -10,6 +10,16 @@
     font-weight: normal;
     font-style: normal;
 }
+.bg-vid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
 body{
     background: url("../res/img/bg-menu.jpg") repeat;
     overflow: hidden;
