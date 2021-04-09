@@ -20,8 +20,8 @@
         <a href="/mainpage.php" class="button">Текстурпаки</a>
         <a href="/mainpage.php" class="button">Скины</a>
         <a href="/mainpage.php" class="button">Карты</a>
-        <a href="/mainpage.php" class="button">Авторизация</a>
-        <a href="/mainpage.php" class="button">Регистрация</a>
+        <a href="/login/login-form.php" class="button">Авторизация</a>
+        <a href="/login/register-form.php" class="button">Регистрация</a>
 
     </nav>
 </header>
