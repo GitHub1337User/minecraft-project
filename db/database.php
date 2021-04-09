@@ -43,7 +43,7 @@ class Database{
         }
     }
 }
-$db = new Database();
+//$db = new Database();
 //$db->execute("INSERT INTO 'admin' SET 'login'='admin3','password'='admin3'");
 
 // Добавление в таблицу пример:

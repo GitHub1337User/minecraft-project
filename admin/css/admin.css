@@ -53,3 +53,10 @@ button:hover{
 label{
     padding-left: 15px;
 }
+.msg{
+    background-color: #ff887c;
+    border: 2px solid red;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+}
