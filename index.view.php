@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html>
 <head>
@@ -12,6 +13,7 @@
 <body>
 <video src="res/videos/bg-vid2.mp4" autoplay muted loop class="bg-vid"></video>
 <div class="wrapper">
+
     <img src="res/img/logo.png" alt="logo" class="logo" draggable="false">
     <div class="rotate_trick"><h2 class="tricks">With a sauce!</h2></div>
     <div class="buttons">
@@ -19,6 +21,12 @@
         <a href="/mainpage.php" class="button">Текстурпаки</a>
         <a href="/mainpage.php" class="button">Скины</a>
         <a href="/mainpage.php" class="button">Карты</a>
+        <?php
+        if ($_SESSION['status']) {
+            echo '<p class="msg"> ' . $_SESSION['status'] . ' </p>';
+        }
+        unset($_SESSION['status']);
+        ?>
     </div>
     <audio id="sound" src="res/sounds/Click.ogg"></audio>
 </div>

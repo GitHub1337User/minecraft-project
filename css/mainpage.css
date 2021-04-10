@@ -58,8 +58,8 @@ a{
     display: flex;
     width: 100%;
     height: auto;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 .button{
     /*background: #808080;*/
@@ -77,11 +77,18 @@ a{
 /*.buttons:last-child{*/
 /*    background: url("../res/img/custom-btn.png") repeat;*/
 /*}*/
-.button:last-of-type{
+.menu-btn,.user-btn{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.button-reg,.button-out{
     background: url("../res/img/custom-btn.png") repeat;
 }
-.button:nth-last-child(2){
-    margin-left: auto;
+.button-login{
+
     background: url("../res/img/custom-btn2.png") repeat;
 }
 /* ANIMATION */

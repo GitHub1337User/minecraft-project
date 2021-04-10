@@ -23,9 +23,12 @@
         <button type="submit" class="button">Войти</button>
         <?php
         if ($_SESSION['status']) {
-            echo '<p class="msg"> ' . $_SESSION['status'] . ' </p>';
+//            echo '<p class="msg"> ' . $_SESSION['status'] . ' </p>';
+//            echo '<p class="'.$_SESSION['msgType'].'"'. $_SESSION['status'] . '</p>';
+            echo  "<p class=".$_SESSION['msgType'].">".$_SESSION['status'] . '</p>';
         }
         unset($_SESSION['status']);
+        unset($_SESSION['msgType']);
         ?>
     </form>
 

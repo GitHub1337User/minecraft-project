@@ -3,7 +3,7 @@ session_start();
 if (!$_SESSION['admin']) {
     header('Location: index.php');
 }
-require $_SERVER['DOCUMENT_ROOT'] . '/db/database.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/db/Database.php';
 ?>
 <!doctype html>
 <html>

@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html>
 <head>
@@ -16,12 +17,21 @@
         <img src="res/img/favicon.png" alt="" class="pic-logo blick"><h1>MINECRAFT  CHEST</h1>
     </div>
     <nav class="buttons">
+        <div class="menu-btn">
         <a href="/mainpage.php" class="button">Моды</a>
         <a href="/mainpage.php" class="button">Текстурпаки</a>
         <a href="/mainpage.php" class="button">Скины</a>
         <a href="/mainpage.php" class="button">Карты</a>
-        <a href="/login/login-form.php" class="button">Авторизация</a>
-        <a href="/login/register-form.php" class="button">Регистрация</a>
+        </div>
+        <div class="user-btn">
+        <?php if (!$_SESSION['user']) {
+
+            echo '<a href = "/login/login-form.php" class="button button-login" > Авторизация</a >';
+            echo '<a href = "/login/register-form.php" class="button button-reg" > Регистрация</a >';
+            }
+            else echo '<a href = "/login/user-logout.php" class="button button-out" >Выход</a >';
+        ?>
+        </div>
 
     </nav>
 </header>
