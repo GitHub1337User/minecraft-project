@@ -14,7 +14,7 @@ if($password===$password_repeat) {
     $users = $db->query("SELECT * FROM `users` WHERE `login` = :login",array($login));
 
     if($users==null) {
-        $password=md5($password);
+        $password=password_hash($password, PASSWORD_DEFAULT);
         $db->execute("INSERT INTO `users` (`login`, `nickname`, `password`) VALUES (:login,:nickname, :password)",array($login,$nickname,$password));
 //        INSERT INTO `users` (`login`, `nickname`, `password`) VALUES ("vasya@mail.ru","vasya", 123)
         $_SESSION['status'] = "Успешная регистрация. Войдите";

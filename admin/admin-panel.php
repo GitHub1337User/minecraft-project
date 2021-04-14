@@ -18,12 +18,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/db/Database.php';
 
     <p><?= $_SESSION['admin']['login'];?></p>
     <a href="admin-logout.php" class="logout">Выход</a>
-<!--    <pre>    --><?php //$db = new Database();
-//    $login = "admin2";
-//    $password = md5("admin2");
-//    $admins = $db->query("SELECT * FROM `admin` WHERE `login` = '$login' AND `password` = '$password'");
-//    print_r($_SESSION['admin']['login']);
-//    ?>
-<!--    </pre>-->
+
+
 </body>
 </html>
