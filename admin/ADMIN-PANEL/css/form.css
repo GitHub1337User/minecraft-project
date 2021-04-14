@@ -1,0 +1,12 @@
+form{
+  min-width: 280px;
+  width: 50vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background: orange;
+}
+form>*{
+  margin: 15px;
+  padding: 5px;
+}

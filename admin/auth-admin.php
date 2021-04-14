@@ -12,7 +12,7 @@ if ($admins == null) {
     header('Location: index.php');
 
 } else {
-    header('Location: admin-panel.php');
+    header('Location: ADMIN-PANEL/admin-panel.php');
     $_SESSION['admin'] = [
         "id" => $admins[0]['id'],
         "login"=>$admins[0]['login'],
