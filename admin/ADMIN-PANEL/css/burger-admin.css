@@ -1,6 +1,8 @@
 body {
     font-family: "Lato", sans-serif;
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 .sidenav {
@@ -45,7 +47,22 @@ body {
 
 #main {
     transition: margin-left .5s;
-    padding: 16px;
+    /*padding: 16px;*/
+    /*display: flex;*/
+    /*height: fit-content;*/
+    /*border: 1px solid black;*/
+    /*margin: 0 auto;*/
+    /*width: 99vw;*/
+    /*height: fit-content;*/
+}
+.top-el{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.top-el>h2{
+    margin-left: 15px;
 }
 .burger-btn{
   font-size:30px;

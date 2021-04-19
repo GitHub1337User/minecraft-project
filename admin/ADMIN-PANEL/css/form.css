@@ -5,8 +5,32 @@ form{
   display: flex;
   flex-direction: column;
   background: orange;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 form>*{
+  border: none;
   margin: 15px;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+form>button,input[type="file"]{
+  width: fit-content;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+
+
+}
+form>button:hover,input[type="file"]:hover{
+  background-color: black;
+  transition:  all 0.3s;
+
+}
+.main-container{
+  /*border: 1px solid red;*/
+  max-width: 1200px;
+  min-width: 300px;
+  width: 100%;
+  margin: 0 auto;
 }

@@ -5,14 +5,14 @@
 
     <h4>Добавление в категорию:</h4>
 
-    <input type="text" id="hidden-input" disabled name="category">
+    <input type="text" id="hidden-input" disabled name="category" placeholder="Категория заполняется автоматически">
 
     <input type="text" placeholder="Название" onclick="setCategory()" name="name">
 
-    <textarea type="text" placeholder="">
+    <textarea type="text" placeholder="" name="content">
              </textarea>
 
-    <input type="file">
+    <input type="file" name="pic">
 
     <button type="submit" name="button">Добавить</button>
 

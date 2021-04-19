@@ -54,7 +54,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/db/Database.php';
     <a href="#">Clients</a>
     <a href="#">Contact</a> -->
 </div>
-<span  class="burger-btn" onclick="openNav()">☰</span>
+<div class="top-el"><span  class="burger-btn" onclick="openNav()">☰</span>    <h2>Minecraft-Chest Admin Panel</h2></div>
+
 <main id="main">
-    <h2>Minecraft-Chest Admin Panel</h2>
     <div class="main-container">
