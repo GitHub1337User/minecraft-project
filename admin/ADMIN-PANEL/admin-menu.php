@@ -1,9 +1,12 @@
 <?php
 session_start();
 if (!$_SESSION['admin']) {
-    header('Location: index.php');
+    header('Location: ../index.php');
 }
 require $_SERVER['DOCUMENT_ROOT'] . '/db/Database.php';
+$db = new Database();
+$categories = $db->query("SELECT * FROM `categories`",array());
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,33 +24,48 @@ require $_SERVER['DOCUMENT_ROOT'] . '/db/Database.php';
 
     <span class="logged-user"><?= $_SESSION['admin']['login'];?></span>
     <a href="../admin-logout.php" class="logout">Выход &#128682;</a>
-    <button class="accordion">Моды</button>
-    <div class="panel">
-        <a href="admin-form.php" id="mods" class="category">Добавить</a>
-        <a href="#">Изменить</a>
-        <a href="#">Удалить</a>
-    </div>
 
-    <button class="accordion">Текстурпаки</button>
-    <div class="panel">
-        <a href="admin-form.php" id="textures" class="category">Добавить</a>
+    <?php   $index=0;
+    while ($index!=count($categories)) {
+        echo '<button class="accordion">'.$categories[$index]['category_rus'].'</button>
+    <div class="panel">'.
+        '<a href="admin-form.php" id="'.$categories[$index]['category_eng'].'" class="category">Добавить</a>
         <a href="#">Изменить</a>
         <a href="#">Удалить</a>
-    </div>
+    </div>';
+        $index++;
+    }
+    ?>
 
-    <button class="accordion">Скины</button>
-    <div class="panel">
-        <a href="admin-form.php" id="skins" class="category">Добавить</a>
-        <a href="#">Изменить</a>
-        <a href="#">Удалить</a>
-    </div>
 
-    <button class="accordion">Карты</button>
-    <div class="panel">
-        <a href="admin-form.php" id="maps" class="category">Добавить</a>
-        <a href="#">Изменить</a>
-        <a href="#">Удалить</a>
-    </div>
+
+<!--    <button class="accordion">Моды</button>-->
+<!--    <div class="panel">-->
+<!--        <a href="admin-form.php" id="mods" class="category">Добавить</a>-->
+<!--        <a href="#">Изменить</a>-->
+<!--        <a href="#">Удалить</a>-->
+<!--    </div>-->
+<!---->
+<!--    <button class="accordion">Текстурпаки</button>-->
+<!--    <div class="panel">-->
+<!--        <a href="admin-form.php" id="textures" class="category">Добавить</a>-->
+<!--        <a href="#">Изменить</a>-->
+<!--        <a href="#">Удалить</a>-->
+<!--    </div>-->
+<!---->
+<!--    <button class="accordion">Скины</button>-->
+<!--    <div class="panel">-->
+<!--        <a href="admin-form.php" id="skins" class="category">Добавить</a>-->
+<!--        <a href="#">Изменить</a>-->
+<!--        <a href="#">Удалить</a>-->
+<!--    </div>-->
+<!---->
+<!--    <button class="accordion">Карты</button>-->
+<!--    <div class="panel">-->
+<!--        <a href="admin-form.php" id="maps" class="category">Добавить</a>-->
+<!--        <a href="#">Изменить</a>-->
+<!--        <a href="#">Удалить</a>-->
+<!--    </div>-->
 
     <!-- <a href="#">About</a>
     <a href="#">Services</a>

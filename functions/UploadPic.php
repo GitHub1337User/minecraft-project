@@ -12,6 +12,7 @@ session_start();
 
             $validation = $this->validation($inputName);
             $path = $_SERVER['DOCUMENT_ROOT'].$this->uploaddir . time() . $inputName['name'];
+//            $path = $this->uploaddir . time() . $inputName['name'];
 
             if ($validation) {
                 move_uploaded_file($inputName['tmp_name'], $path);
@@ -26,7 +27,8 @@ session_start();
         public function validation($inputName){
 
             $types = array('image/jpg', 'image/png', 'image/jpeg');
-            $size = 1024000;
+            $size = 7340032;
+
 
             if (!in_array($inputName['type'], $types)){
                 $_SESSION['upload_status']="Запрещенный тип файлов";

@@ -8,19 +8,22 @@ $db = new Database();
 $uploadPic = new UploadPic();
 
 $category = $_POST['category'];
+var_dump($category);
 
 $title = $_POST['title'];
 
 $content = $_POST['content'];
 
 $preview = $uploadPic->upload($_FILES['preview']);
-
+//var_dump($_FILES);
+//var_dump($_FILES['preview']);
 $download_link = $_POST['download_link'];
 
 $version = $_POST['version'];
 
 //$admins = $db->query("SELECT * FROM `admin` WHERE `login` = :login AND `password` = :password",array($login,$password));
 $idCategory = $db->query("SELECT * FROM `categories` WHERE `category_eng` = :category",array($category));
+var_dump($idCategory);
 
 $idVersion = $db->query("SELECT * FROM `versions` WHERE `version_code` = :version",array($version));
 //articles_table == category_id,title,content,preview,download_link,version_id

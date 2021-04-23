@@ -3,7 +3,7 @@
 session_start();
 
 if ($_SESSION['admin']) {
-    header('Location: admin-panel.php');
+    header('Location: ADMIN-PANEL/admin-panel.php');
 }
 
 
