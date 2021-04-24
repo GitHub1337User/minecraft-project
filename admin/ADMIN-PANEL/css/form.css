@@ -10,6 +10,7 @@ form{
 }
 input[type="file"]{
   width: 100px;
+  padding: 0;
 }
 /*label{*/
 /*  margin: 0;*/
@@ -44,4 +45,8 @@ form>button:hover,input[type="file"]:hover{
 }
 .msg{
   background-color: #60a960;
+}
+form>textarea{
+  height: 50px;
+  resize: none;
 }
