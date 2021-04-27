@@ -16,6 +16,7 @@ $categories = $db->query("SELECT * FROM `categories`",array());
     <link rel="stylesheet" href="/admin/ADMIN-PANEL/css/accordion.css">
     <link rel="stylesheet" href="/admin/ADMIN-PANEL/css/form.css">
     <link rel="stylesheet" href="/admin/ADMIN-PANEL/css/admin-menu.css">
+    <link rel="stylesheet" href="/admin/ADMIN-PANEL/css/article-admin.css">
 
     <title>Admin-Panel Minecraft-Chest</title>
 </head>
