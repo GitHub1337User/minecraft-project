@@ -25,7 +25,7 @@ $categories = $db->query("SELECT * FROM `categories`",array());
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 
     <a href="/admin/ADMIN-PANEL/admin-panel.php" class="logged-user"><?= $_SESSION['admin']['login'];?></a>
-    <a href="../admin-logout.php" class="logout">Выход &#128682;</a>
+    <a href="/admin/admin-logout.php" class="logout">Выход &#128682;</a>
 
     <?php   $index=0;
     while ($index!=count($categories)) {
