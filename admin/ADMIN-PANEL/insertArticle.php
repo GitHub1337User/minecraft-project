@@ -32,7 +32,7 @@ VALUES ( :category_id , :title,:content,:preview, :download_link , :version_id )
     array($idCategory[0]['id'],$title,$content,$preview,$download_link,$idVersion[0]['id']));
 
 $_SESSION['post_status'] = "Артикль добавлен";
-header('Location: admin-form.php');
+header('Location: admin-form-pic.php');
 
 
 //$sql="SELECT r.id, r.author_id, r.product_id, text, created_at, ri.image,

@@ -33,8 +33,8 @@ $categories = $db->query("SELECT * FROM `categories`",array());
         echo '<button class="accordion">'.$categories[$index]['category_rus'].'</button>
     <div class="panel">'.
         '<a href="/admin/ADMIN-PANEL/admin-form.php" id="'.$categories[$index]['category_eng'].'" class="category">Добавить</a>
-        <a href="#">Изменить</a>
-        <a href="#">Удалить</a>
+    
+        <a href="#">Просмотр</a>
     </div>';
         $index++;
     }

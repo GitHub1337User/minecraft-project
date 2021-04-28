@@ -24,7 +24,7 @@ class Database{
     public function execute($sql,$arrayForExecute){
 
         $sth = $this->link->prepare($sql);
-
+//        return var_dump($arrayForExecute);
         return $sth->execute($arrayForExecute);
     }
 

@@ -30,12 +30,12 @@ else{
 
 <?php $index = 0;
     while($index!=count($articles)){
-//
-        echo '<section class="article">
-        <a href="#" class="header-article">
 
-       <h3>'.$articles[$index]['title'].'</h3>
-   </a>
+        echo '<section class="article">
+        <div class="header-article">
+
+       <a href="#">'.$articles[$index]['title'].' </a><a href="/admin/ADMIN-PANEL/admin-form-edit.php/?articleId='.$articles[$index]['id'].'" class="article-remote-btn">&#9998;</a><a href="/admin/ADMIN-PANEL/admin-form-edit.php/?articleId='.$articles[$index]['id'].'" class="article-remote-btn">&#10060;</a>
+   </div>
     <div class="content-article">'.
     '<img src="/uploads/'.$articles[$index]['preview'].'" alt="pic" class="article-pic">
         <p class="description">'.$articles[$index]['content'].'</p>

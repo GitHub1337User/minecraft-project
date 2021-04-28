@@ -20,7 +20,7 @@ session_start();
             if ($validation) {
                 move_uploaded_file($inputName['tmp_name'], $path);
             } else {
-                $_SERVER['upload_status']="Возникла ошибка при загрузке файла";
+                $_SESSION['upload_status']="Возникла ошибка при загрузке файла";
             }
             return $name;
 

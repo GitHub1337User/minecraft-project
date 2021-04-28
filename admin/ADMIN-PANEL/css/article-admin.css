@@ -1,11 +1,21 @@
 .description{
     padding: 5px;
 }
-/*.section{*/
-/*    */
-/*    margin-top: 25px;*/
-/*    height: fit-content;*/
-/*}*/
+.header-article>a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+}
+.header-article>a:hover{
+    text-decoration: underline;
+}
+.article-remote-btn{
+    background-color: green;
+    margin-left: 15px;
+    padding: 5px;
+}
+
 .article{
     width: 90%;
     height: fit-content;
