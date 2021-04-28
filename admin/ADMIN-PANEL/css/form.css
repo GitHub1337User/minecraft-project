@@ -31,6 +31,18 @@ form>button,input[type="file"]{
 
 
 }
+.not-load{
+  display: block;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+  text-decoration: none;
+}
+.not-load:hover{
+  transition:  all 0.3s;
+  background-color: darkred;
+}
 form>button:hover,input[type="file"]:hover{
   background-color: black;
   transition:  all 0.3s;

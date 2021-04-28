@@ -19,6 +19,7 @@ $articleId = $db->query("SELECT * FROM articles WHERE  date_upload = (select max
 
 
         <button type="submit" name="button">Добавить</button>
+        <a href="/admin/ADMIN-PANEL/admin-panel.php" class="not-load">Продолжить без добавления</a>
 
     </form>
 

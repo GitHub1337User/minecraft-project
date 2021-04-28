@@ -6,28 +6,20 @@ session_start();
 $db = new Database();
 $uploadPic = new UploadPic();
 
-$pics = $_FILES['pics'];
+//$pics = $_FILES['pics'];
+$idArticle = $_POST['id'];
 
-    if(count($pics['name'])!=1) {
-        $tmp=[];
-        foreach ($pics as $key => $value) {
-            for ($i = 0; $i != count($pics[$key]); $i++) {
-//              print_r($pics[$key][$i]);
-                $tmp[$key]=$value[$i];
-
-            }
-            echo '<pre>';
-            print_r($tmp);
-            echo '</pre>';
-            $dbPic = $uploadPic->upload($_FILES['preview']);
+if ($_FILES) {
+    foreach ($_FILES["pics"]["error"] as $key => $error) {
+        if ($error == UPLOAD_ERR_OK) {
+            $tmp_name = $_FILES["pics"]["tmp_name"][$key];
+            $name =  rand(0,100).time(). rand(0,100) . $_FILES["pics"]["name"][$key];
+            $path = $_SERVER['DOCUMENT_ROOT'].'/uploads/'.$name;
+            move_uploaded_file($tmp_name, $path);
+            $db->execute("INSERT INTO `images` (`article_id`,`image`) VALUES ( :article_id , :image )",
+                array($idArticle,$name));
         }
     }
-    else{
+    header('Location: admin-form.php');
+}
 
-    }
-//    echo "{$key} => {$value} ";
-
-//    echo "<hr>";
-//    echo '<pre>';
-//    print_r($pics);
-//    echo '</pre>';

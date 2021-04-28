@@ -4,6 +4,7 @@
 <script src="/admin/ADMIN-PANEL/js/accordion.js" charset="utf-8"></script>
 <!--<script src="js/dynamic-form.js" charset="utf-8"></script>-->
 <script src="/admin/ADMIN-PANEL/js/categorySelect.js"></script>
+<script src="/admin/ADMIN-PANEL/js/confirm.js"></script>
 
 </body>
 </html>
