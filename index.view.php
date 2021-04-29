@@ -17,10 +17,10 @@
     <img src="res/img/logo.png" alt="logo" class="logo" draggable="false">
     <div class="rotate_trick"><h2 class="tricks">With a sauce!</h2></div>
     <div class="buttons">
-        <a href="/mainpage.php" class="button">Моды</a>
-        <a href="/mainpage.php" class="button">Текстурпаки</a>
-        <a href="/mainpage.php" class="button">Скины</a>
-        <a href="/mainpage.php" class="button">Карты</a>
+        <a href="/mainpage.php/?category=mods" class="button">Моды</a>
+        <a href="/mainpage.php/?category=textures" class="button">Текстурпаки</a>
+        <a href="/mainpage.php/?category=skins" class="button">Скины</a>
+        <a href="/mainpage.php/?category=maps" class="button">Карты</a>
         <?php
         if ($_SESSION['status']) {
             echo '<p class="msg"> ' . $_SESSION['status'] . ' </p>';

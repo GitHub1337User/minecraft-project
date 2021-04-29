@@ -59,6 +59,21 @@
 </section>
 
 
+
+<!--'<section class="article">-->
+<!--    <div class="header-article">-->
+<!---->
+<!--        <a href="#">'.$articles[$index]['title'].' </a>-->
+<!--    </div>-->
+<!--    <div class="content-article">'.-->
+<!--        '<img src="/uploads/'.$articles[$index]['preview'].'" alt="pic" class="article-pic">-->
+<!--        <p class="description">'.$articles[$index]['content'].'</p>-->
+<!--    </div>-->
+<!---->
+<!--    <div class="footer-article"><span>Категория: '.$articles[$index]['category_rus'].'</span> <span>Загружено: '.$articles[$index]['date_upload'].'</span> <span>Версия '.$articles[$index]['version_code'].'</span></div>-->
+<!--</section>';-->
+
+
 <script src="/js/burger-menu.js"></script>
 </body>
 </html>

@@ -17,6 +17,6 @@ for($i=0;$i!=count($articlePics);$i++){
 }
 $db->query("DELETE FROM `articles` WHERE id=:id",array($articleId));
 //$db->query("DELETE FROM `images` WHERE article_id=:id",array($articleId));
-//
+
 header('Location: /admin/ADMIN-PANEL/admin-articles.php/?queryType='.$_GET["q"]);
 //header('Location: admin-articles.php');
