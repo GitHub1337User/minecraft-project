@@ -11,10 +11,10 @@ unlink($_SERVER['DOCUMENT_ROOT']."/uploads/".$article[0]['preview']);
 $articlePics = $db->query("SELECT * FROM `images` WHERE article_id=:article_id",array($articleId));
 
 //return var_dump($articlePics);
-for($i=0;$i!=count($articlePics);$i++){
+        for($i=0;$i!=count($articlePics);$i++){
 
-    unlink($_SERVER['DOCUMENT_ROOT']."/uploads/".$articlePics[$i]['image']);
-}
+            unlink($_SERVER['DOCUMENT_ROOT']."/uploads/".$articlePics[$i]['image']);
+        }
 $db->query("DELETE FROM `articles` WHERE id=:id",array($articleId));
 //$db->query("DELETE FROM `images` WHERE article_id=:id",array($articleId));
 

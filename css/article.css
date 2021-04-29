@@ -1,11 +1,10 @@
 .description{
-
+    margin-bottom:20px;
+    background: url("../res/img/bg-table.jpg") repeat;
+    padding: 15px;
+    color: white;
+    line-height: 1.5;
 }
-/*.section{*/
-/*    */
-/*    margin-top: 25px;*/
-/*    height: fit-content;*/
-/*}*/
 .article{
     width: 90%;
     height: fit-content;
