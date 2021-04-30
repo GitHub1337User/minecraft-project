@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html>
 <head>
@@ -6,6 +7,7 @@
     <link rel="stylesheet" href="/css/article.css">
     <link rel="stylesheet" href="/css/burger.css">
     <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/commentform.css">
 <!--    <link rel="stylesheet" href="/css/footer.css">-->
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -15,6 +17,7 @@
 </head>
 <body>
 <header>
+
     <!--    <img src="res/img/logo-site.png" alt="" class="site-logo" draggable="false">-->
     <a  href="/index.php" class="site-logo">
         <img src="/res/img/favicon.png" alt="" class="pic-logo blick"><h1>MINECRAFT  CHEST</h1>
@@ -31,6 +34,7 @@
         </div>
 
         <div class="user-btn">
+
             <?php if (!$_SESSION['user']) {
 
                 echo '<a href = "/login/login-form.php" class="button button-login" > Авторизация</a >';

@@ -21,7 +21,7 @@ if ($users == null) {
     if(password_verify($password,$users[0]['password'])) {
         header('Location: /');
         $_SESSION['user'] = [
-            "id" => $users[0]['id'],
+            "id" => $users[0]['Id'],
             "login" => $users[0]['login'],
 
         ];

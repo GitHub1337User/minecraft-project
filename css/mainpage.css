@@ -78,6 +78,14 @@ footer{
     color: white;
     line-height: 50px;
 }
+@media screen and (max-width: 1024px) {
+    .site-logo>h1{
+        font-size: 20pt;
+    }
+    .site-logo{
+        width: 270px;
+    }
+}
 a{
     text-decoration: none;
     color: white;
