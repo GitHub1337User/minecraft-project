@@ -111,6 +111,20 @@ a{
 .button:active{
     background: #808080;
 }
+.active-btn-page{
+    background: url("../res/img/btn-page-bg.png") repeat;
+}
+.links-page{
+    /*border: 1px solid red;*/
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: url("../res/img/bg-stone-bricks.jpg") repeat;
+}
 /*.buttons:last-child{*/
 /*    background: url("../res/img/custom-btn.png") repeat;*/
 /*}*/

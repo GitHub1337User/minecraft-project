@@ -1,7 +1,7 @@
 
 
 <?php include_once $_SERVER['DOCUMENT_ROOT']."/header.php";?>
-<?php $index = 0;
+<?php $index =0;
 while($index!=count($articles)){
 
     echo '<section class="article">
@@ -17,9 +17,32 @@ while($index!=count($articles)){
     <div class="footer-article"><span>Категория: '.$articles[$index]['category_rus'].'</span> <span>Загружено: '.$articles[$index]['date_upload'].'</span> <span>Версия '.$articles[$index]['version_code'].'</span></div>
 </section>';
 
-
     $index++;
 }
+echo '<div class="links-page">';
+if($page!=1){
+    $prev =$page-1;
+    echo '<a href="/mainpage.php/?category='.$category.'&page='.$prev.'" class="button"><<</a>';
+}
+for($i=1;$i<=$pagesCount; $i++){
+    if($page==$i){
+        echo '<a href="/mainpage.php/?category='.$category.'&page='.$i.'" class="button active-btn-page">'.$i.'</a>';
+//        echo '<a href="/mainpage.php/?category='.$category.'?page='.$i.'" class="button active-btn-page">'.$i.'</a>';
+//        echo '<a href="?category='.$category.'?page='.$i.'" class="button active-btn-page">'.$i.'</a>';
+    }
+    else{
+        echo '<a href="/mainpage.php/?category='.$category.'&page='.$i.'" class="button">'.$i.'</a>';
+    }
+}
+if($page!=$pagesCount){
+    $next =$page+1;
+
+    echo '<a href="/mainpage.php/?category='.$category.'&page='.$next.'" class="button">>></a>';
+}
+echo '</div>';
+do{
+
+}while()
 ?>
 
 

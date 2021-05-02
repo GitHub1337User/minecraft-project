@@ -105,25 +105,12 @@ echo '<div class="footer-article"><span>Категория: '.$article[0]['categ
 
         </div>
 
-
-
     </div>
-
-
-
-
-
-
-
-
 <?php
 
 echo '</section>';
 
 ?>
-
-
-
 
 
 <?php include_once $_SERVER['DOCUMENT_ROOT']."/footer.php";?>
