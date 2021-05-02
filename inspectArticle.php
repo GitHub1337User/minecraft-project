@@ -62,7 +62,7 @@ echo '<div class="footer-article"><span>Категория: '.$article[0]['categ
         <?php
         if(!$_SESSION['user']){
 
-            echo '<div class="info-comment"><a href="/login/register-form.php">Зарегестрируйтесь</a> или <a href="/login/login-form.php">войдите</a> чтобы оставлять комментарии.</div>';
+            echo '<div class="info-comment"><a href="/login/register-form.php">Зарегистрируйтесь</a> или <a href="/login/login-form.php">войдите</a> чтобы оставлять комментарии.</div>';
         }else{
             echo ' <form action="/addComment.php" method="POST" class="comment-form">
          <label for="comment" class="label-comment">Комментарий</label>
