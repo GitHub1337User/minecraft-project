@@ -10,6 +10,7 @@
         <a href="/mainpage.php/?category=textures" class="footer-link">Текстурпаки</a>
         <a href="/mainpage.php/?category=skins" class="footer-link">Скины</a>
         <a href="/mainpage.php/?category=maps" class="footer-link">Карты</a>
+        <a href="/crafts.php" class="footer-link">Крафты</a>
 
     </div>
     <div><h2>LICENSE</h2>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/burger.css">
     <link rel="stylesheet" href="/css/slider.css">
     <link rel="stylesheet" href="/css/commentform.css">
+    <link rel="stylesheet" href="/css/crafts.css">
 
 <!--    <link rel="stylesheet" href="/css/footer.css">-->
     <meta charset="UTF-8">
@@ -33,6 +34,7 @@
             <a href="/mainpage.php/?category=textures" class="button">Текстурпаки</a>
             <a href="/mainpage.php/?category=skins" class="button">Скины</a>
             <a href="/mainpage.php/?category=maps" class="button">Карты</a>
+            <a href="/crafts.php" class="button">Крафты</a>
 
         </div>
 
@@ -43,7 +45,11 @@
                 echo '<a href = "/login/login-form.php" class="button button-login" > Авторизация</a >';
                 echo '<a href = "/login/register-form.php" class="button button-reg" > Регистрация</a >';
             }
-            else echo '<a href = "/login/user-logout.php" class="button button-out" >Выход</a >';
+            else {
+                echo  '<span class="button button-login" style="color:white;">'.$_SESSION['user']['login'].'</span>';
+                echo '<a href = "/login/user-logout.php" class="button button-out" >Выход</a >';
+
+            };
             ?>
         </div>
     </nav>
