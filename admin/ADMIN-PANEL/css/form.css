@@ -4,7 +4,8 @@ form{
   height: fit-content;
   display: flex;
   flex-direction: column;
-  background: orange;
+
+  background-color: darkgrey;
   margin: 0 auto;
   border-radius: 5px;
 }
@@ -25,7 +26,7 @@ form>*{
 }
 form>button,input[type="file"]{
   width: fit-content;
-  background-color: green;
+  background-color: grey;
   color: white;
   font-weight: bold;
 
@@ -33,7 +34,7 @@ form>button,input[type="file"]{
 }
 .not-load{
   display: block;
-  background-color: red;
+  background-color: cornflowerblue;
   color: white;
   font-weight: bold;
   width: fit-content;
@@ -41,10 +42,10 @@ form>button,input[type="file"]{
 }
 .not-load:hover{
   transition:  all 0.3s;
-  background-color: darkred;
+  background-color: darkblue;
 }
 form>button:hover,input[type="file"]:hover{
-  background-color: black;
+  background-color: darkgrey;
   transition:  all 0.3s;
 
 }

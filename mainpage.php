@@ -26,5 +26,44 @@ $countArticles = $db->query("SELECT COUNT(*) as count FROM `articles` WHERE cate
 $count = $countArticles[0]['count'];
 
 $pagesCount = ceil($count/$articlesOnPage);
+
+function links($category,$page,$i){
+    if($page==$i){
+        return '<a href="/mainpage.php/?category='.$category.'&page='.$i.'" class="button active-btn-page">'.$i.'</a>';
+    }
+    else{
+        return  '<a href="/mainpage.php/?category='.$category.'&page='.$i.'" class="button">'.$i.'</a>';
+    }
+}
+function pagination($pagesCount, $page,$category){
+    $pageToRender = 5;
+    $tmp = 4;
+    if($pagesCount < $pageToRender) {
+        foreach(range(1,$pagesCount) as $i){
+            echo links($category,$page,$i);
+        }
+    }else if($pagesCount > $tmp && $page < $pageToRender){
+        foreach(range(1, $pageToRender) as $i){
+            echo links($category,$page,$i);
+        }
+    }else  if($pagesCount - $pageToRender < $pageToRender && $page > $pageToRender && $pagesCount - $pageToRender > 0){
+        foreach(range($pagesCount - $tmp, $pagesCount) as $i){
+            echo links($category,$page,$i);
+        }
+    }else if($pagesCount > $tmp && $pagesCount - $pageToRender < $pageToRender && $page == $pageToRender){
+        foreach(range($page-2, $pagesCount) as $i) {
+            echo links($category,$page,$i);
+        }
+    }else  if($pagesCount > $tmp && $pagesCount-$pageToRender > $pageToRender && $page >=$pageToRender && $page <= $pagesCount-$tmp){
+        foreach(range($page-2, $page+2) as $i){
+            echo links($category,$page,$i);
+        }
+    }else if($pagesCount > $tmp && $pagesCount-$pageToRender > $pageToRender && $page > $pagesCount-4){
+        foreach(range($pagesCount-$tmp, $pagesCount) as $i){
+            echo links($category,$page,$i);
+        }
+    }
+}
+
 //session_start();
 include_once $_SERVER['DOCUMENT_ROOT']."/mainpage.view.php";

@@ -22,27 +22,26 @@ while($index!=count($articles)){
 echo '<div class="links-page">';
 if($page!=1){
     $prev =$page-1;
-    echo '<a href="/mainpage.php/?category='.$category.'&page='.$prev.'" class="button"><<</a>';
+    echo '<a href="/mainpage.php/?category='.$category.'&page='.$prev.'" class="button pagintation-link"><<</a>';
 }
-for($i=1;$i<=$pagesCount; $i++){
-    if($page==$i){
-        echo '<a href="/mainpage.php/?category='.$category.'&page='.$i.'" class="button active-btn-page">'.$i.'</a>';
-//        echo '<a href="/mainpage.php/?category='.$category.'?page='.$i.'" class="button active-btn-page">'.$i.'</a>';
-//        echo '<a href="?category='.$category.'?page='.$i.'" class="button active-btn-page">'.$i.'</a>';
-    }
-    else{
-        echo '<a href="/mainpage.php/?category='.$category.'&page='.$i.'" class="button">'.$i.'</a>';
-    }
-}
+//for($i=1;$i<=$pagesCount; $i++){
+//    if($page==$i){
+//        echo '<a href="/mainpage.php/?category='.$category.'&page='.$i.'" class="button  pagintation-link active-btn-page">'.$i.'</a>';
+////        echo '<a href="/mainpage.php/?category='.$category.'?page='.$i.'" class="button active-btn-page">'.$i.'</a>';
+////        echo '<a href="?category='.$category.'?page='.$i.'" class="button active-btn-page">'.$i.'</a>';
+//    }
+//    else{
+//        echo '<a href="/mainpage.php/?category='.$category.'&page='.$i.'" class="button  pagintation-link">'.$i.'</a>';
+//    }
+//}
+pagination($pagesCount, $page,$category);
 if($page!=$pagesCount){
     $next =$page+1;
 
-    echo '<a href="/mainpage.php/?category='.$category.'&page='.$next.'" class="button">>></a>';
+    echo '<a href="/mainpage.php/?category='.$category.'&page='.$next.'" class="button  pagintation-link">>></a>';
 }
 echo '</div>';
-do{
 
-}while()
 ?>
 
 

@@ -1,3 +1,6 @@
+body{
+    background-color: darkslategrey;
+}
 .admin-menu{
     width: 100%;
     height: fit-content;
@@ -31,25 +34,46 @@
 
 }
 .menu-point:nth-child(1){
-    background-color: orange;
+    background-color: darkgrey;
 }
 .menu-point:nth-child(2){
 
-    background-color: orange;
+    background-color: darkgrey;
 }
 .menu-point:nth-child(3){
-    background-color: cornflowerblue;
+    background-color: darkslategrey;
 }
 .menu-point:nth-child(4){
-    background-color: green;
+    background-color: darkslategrey;
 }
 .menu-point:nth-child(5){
-    background-color: green;
+    background-color: grey;
 }
 .menu-point:nth-child(6){
+    background-color: grey;
+}
+
+.active-btn-page{
+   background-color: green;
+}
+.links-page{
+    /*border: 1px solid red;*/
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     background-color: cornflowerblue;
 }
-table>*{
-    /*border: 1px solid black;*/
-    border: inset;
+.button{
+    background-color: orange;
+
+    margin: 5px;
+}
+.links-page>a{
+    padding: 7px;
+    text-decoration: none;
+    color: #111111;
 }

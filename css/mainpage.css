@@ -125,6 +125,9 @@ a{
     flex-direction: row;
     background: url("../res/img/bg-stone-bricks.jpg") repeat;
 }
+.links-page>a{
+    padding: 7px;
+}
 /*.buttons:last-child{*/
 /*    background: url("../res/img/custom-btn.png") repeat;*/
 /*}*/

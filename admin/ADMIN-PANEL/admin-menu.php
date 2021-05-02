@@ -33,47 +33,11 @@ $categories = $db->query("SELECT * FROM `categories`",array());
         echo '<button class="accordion">'.$categories[$index]['category_rus'].'</button>
     <div class="panel">'.
         '<a href="/admin/ADMIN-PANEL/admin-form.php" id="'.$categories[$index]['category_eng'].'" class="category">Добавить</a>
-    
-        <a href="#">Просмотр</a>
     </div>';
         $index++;
     }
     ?>
 
-
-
-<!--    <button class="accordion">Моды</button>-->
-<!--    <div class="panel">-->
-<!--        <a href="admin-form.php" id="mods" class="category">Добавить</a>-->
-<!--        <a href="#">Изменить</a>-->
-<!--        <a href="#">Удалить</a>-->
-<!--    </div>-->
-<!---->
-<!--    <button class="accordion">Текстурпаки</button>-->
-<!--    <div class="panel">-->
-<!--        <a href="admin-form.php" id="textures" class="category">Добавить</a>-->
-<!--        <a href="#">Изменить</a>-->
-<!--        <a href="#">Удалить</a>-->
-<!--    </div>-->
-<!---->
-<!--    <button class="accordion">Скины</button>-->
-<!--    <div class="panel">-->
-<!--        <a href="admin-form.php" id="skins" class="category">Добавить</a>-->
-<!--        <a href="#">Изменить</a>-->
-<!--        <a href="#">Удалить</a>-->
-<!--    </div>-->
-<!---->
-<!--    <button class="accordion">Карты</button>-->
-<!--    <div class="panel">-->
-<!--        <a href="admin-form.php" id="maps" class="category">Добавить</a>-->
-<!--        <a href="#">Изменить</a>-->
-<!--        <a href="#">Удалить</a>-->
-<!--    </div>-->
-
-    <!-- <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a> -->
 </div>
 <div class="top-el"><span  class="burger-btn" onclick="openNav()">☰</span>    <h2>Minecraft-Chest Admin Panel</h2></div>
 

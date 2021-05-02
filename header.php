@@ -2,12 +2,15 @@
 <!doctype html>
 <html>
 <head>
+
+
     <link rel="shortcut icon" href="/res/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/mainpage.css">
     <link rel="stylesheet" href="/css/article.css">
     <link rel="stylesheet" href="/css/burger.css">
     <link rel="stylesheet" href="/css/slider.css">
     <link rel="stylesheet" href="/css/commentform.css">
+
 <!--    <link rel="stylesheet" href="/css/footer.css">-->
     <meta charset="UTF-8">
     <meta name="viewport"

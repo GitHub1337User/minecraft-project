@@ -23,5 +23,6 @@
 
 
 <script defer src="/js/slider.js"></script>
+
 </body>
 </html>

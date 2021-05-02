@@ -1,28 +1,39 @@
 .description{
     padding: 5px;
 }
+.remote-btns>a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+}
 .header-article>a{
     text-decoration: none;
     display: inline-block;
     color: white;
     font-size: 16px;
 }
-.header-article>a:hover{
-    text-decoration: underline;
+.remote-btns>a:hover{
+    background-color: grey;
+    transition: all 0.3s;
 }
 .article-remote-btn{
-    background-color: green;
+    background: darkgrey;
     margin-left: 15px;
     padding: 5px;
 }
-
+.remote-btns{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+}
 .article{
     width: 90%;
     height: fit-content;
     margin: 0 auto;
     margin-top: 25px;
-    /*background: url("../res/img/bg-stone-bricks.jpg") repeat;*/
-    background: cornflowerblue;
+    background: grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +45,7 @@
 }
 .header-article,.footer-article{
     /*background: url("../res/img/bg-hedaer.jpg") repeat;*/
-    background: orange;
+    background: darkgrey;
     padding: 15px;
     width: 100%;
     color: white;
@@ -44,10 +55,10 @@
 }
 .header-article{
     margin-bottom: 25px;
-    display: block;
-}
-.header-article:hover{
-    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer-article{
     margin-top: 25px;
