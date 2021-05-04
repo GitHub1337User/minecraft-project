@@ -11,7 +11,8 @@ $crafts = $db->query("SELECT * FROM `crafts`",array());
     while ($index!=count($crafts)) {
 
         echo '<div class="one-craft" >
-        <span class="craft-title" >'.$crafts[$index]['name'].'<div class="remote-btns"><a href="/admin/ADMIN-PANEL/deleteCraft.php/?craftId='.$crafts[$index]['id'].'" class="article-remote-btn delete-btn">&#10060;</a></div>'.'</span>
+    <div class="remote-btns"><a href="/admin/ADMIN-PANEL/deleteCraft.php/?craftId='.$crafts[$index]['id'].'" class="article-remote-btn delete-btn">&#10060;</a></div>
+        <span class="craft-title" >'.$crafts[$index]['name'].'</span>
         <img src = "/uploads/'.$crafts[$index]['preview'].'" alt = "pic" draggable="false">
         <p class="description-craft" >'.$crafts[$index]['description'].'</p>
     </div >';
