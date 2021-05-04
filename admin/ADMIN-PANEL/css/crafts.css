@@ -1,0 +1,25 @@
+.body-crafts{
+    margin: 0 auto;
+    width: 90%;
+    background: darkgrey;
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /*padding: 20px;*/
+    margin-top: 20px;
+}
+.one-craft{
+    background: grey;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+}
+.one-craft>*{
+    margin-top: 10px;
+}
